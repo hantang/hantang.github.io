@@ -28,7 +28,8 @@
 
 # production
 /build
-/public
+/public/*
+!/public/static
 *.xml
 
 # debug
@@ -53,7 +54,7 @@ jspm_packages/
 dist/
 cache/
 pnpm-global
-yarn.lock
+# yarn.lock
 package-lock.json
 
 # local
