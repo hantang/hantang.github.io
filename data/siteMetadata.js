@@ -2,8 +2,8 @@
 const siteMetadata = {
   title: 'Hantang\'s Blog',
   author: 'Hantang',
-  headerTitle: 'Archipelago',
-  description: 'A blog created with Next.js and Tailwind.css',
+  headerTitle: '༼ つ ◕‿◕ ༽つ Archipelago',
+  description: "... write blogs and have fun ...",
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://github.com',
