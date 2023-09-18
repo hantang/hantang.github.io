@@ -14,16 +14,16 @@ const projectsData = [
     href: 'https://github.com/hantang/weblog',
   },
   {
-    title: 'guokr nav mirror',
+    title: 'gate.guokr mirror',
     description: `果壳任意门（镜像备份）`,
-    imgSrc: '/static/images/nav-guokr-snapshot.png',
-    href: 'https://github.com/hantang/nav-guokr',
+    imgSrc: '/static/images/gate-guokr-snapshot.png',
+    href: 'https://github.com/hantang/wayback-gate-guokr/',
   },
   {
-    title: 'mirror sites',
-    description: `国内开源镜像站点汇总（备份）`,
-    imgSrc: '/static/images/Under_the_Wave_off_Kanagawa.jpg',
-    href: 'https://github.com/hantang/mirror-site',
+    title: 'mooc collect',
+    description: `一些在线公开课程网站镜像备份。`,
+    imgSrc: '/static/images/mooc-snapshot.jpg',
+    href: 'https://github.com/hantang/wayback-mooc',
   },
 ]
 
