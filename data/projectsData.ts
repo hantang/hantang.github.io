@@ -22,7 +22,7 @@ const projectsData = [
   {
     title: 'mooc collect',
     description: `一些在线公开课程网站镜像备份。`,
-    imgSrc: '/static/images/mooc-snapshot.jpg',
+    imgSrc: '/static/images/mooc-snapshot.png',
     href: 'https://github.com/hantang/wayback-mooc',
   },
 ]
