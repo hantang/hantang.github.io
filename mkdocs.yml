@@ -1,10 +1,152 @@
-site_name: My Docs
+# site information
+site_name: Hantang's Blog
 site_url: https://hantang.github.io/
+site_author: hantang
+site_description: "... write blogs and have fun ..."
+# docs_dir: docs/
+
+# Repository
+repo_name: hantang/hantang.github.io
 repo_url: https://github.com/hantang/hantang.github.io
 # edit_uri: tree/main
-site_description: 
-# docs_dir: docs/
+
 copyright: Copyright &copy; 2023 Hantang
 
 theme:
   name: material
+  # language: "zh"
+  # palette:
+  #   primary: deep purple
+  #   accent: deep purple
+  font:
+    text: Helvetica Neue # Roboto
+    code: Roboto Mono
+  features:
+    - announce.dismiss
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - navigation.indexes
+    - navigation.path
+    - toc.follow
+    - content.tabs.link
+    - search.share
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotations
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+# Plugins
+plugins:
+  - glightbox
+  - blog:
+      enabled: true
+      blog_toc: true
+      pagination_per_page: 5
+      # post_url_format: "{categories}/{slug}"
+      # post_url_max_categories: 2
+      archive: false
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  # - optimize
+  # - minify:
+  #     minify_html: true
+
+# Additional configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hantang
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  # - pymdownx.arithmatex:
+  #     generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  # - javascripts/mathjax.js
+  # - https://polyfill.io/v3/polyfill.min.js?features=es6
+  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - static/javascripts/katex.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+
+# Page tree
+nav:
+  - Home: index.md
+  - Blog:
+      - blog/index.md
+      - Posts: blog/posts/hello-world.md
+  - Essay:
+      - essay/index.md
+      - 《葛底斯堡演讲》gettysburg-address: essay/gettysburg-address.md
+      - 《二十首情诗和一首绝望的歌》: essay/poema-20.md
+      - 《感觉》: essay/sensation.md
+      - 《死亡赋格曲》: essay/todesfuge.md
+      - 《青春》: essay/youth.md
+  - Project:
+      - 项目: project/index.md
+  - About:
+      - about/index.md
