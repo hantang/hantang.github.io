@@ -6,7 +6,7 @@ draft: false
 summary: Hello world!
 ---
 
-![](shot-by-cerqueira-XTKjhfE-Inc-unsplash.jpg "Photo from <https://unsplash.com/photos/XTKjhfE-Inc>")
+![](../../static/images/shot-by-cerqueira-XTKjhfE-Inc-unsplash.jpg "Photo from <https://unsplash.com/photos/XTKjhfE-Inc>")
 
 ***
 
