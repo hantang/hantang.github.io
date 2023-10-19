@@ -1,12 +1,16 @@
 ---
 title: Code Sample
 date: 2016-03-08
-tags: ['example', 'markdown']
+tags:
+  - example
+  - markdown
 draft: false
+authors: [hantang]
 summary: Example of a markdown file with code blocks and syntax highlighting
 ---
 
 A sample post with markdown.
+<!-- more -->
 
 ## Inline Highlighting
 
@@ -17,11 +21,11 @@ Sample of inline highlighting `sum = parseInt(num1) + parseInt(num2)`
 Some Javascript code
 
 ```javascript
-var num1, num2, sum
-num1 = prompt('Enter first number')
-num2 = prompt('Enter second number')
-sum = parseInt(num1) + parseInt(num2) // "+" means "add"
-alert('Sum = ' + sum) // "+" means combine into a string
+var num1, num2, sum;
+num1 = prompt("Enter first number");
+num2 = prompt("Enter second number");
+sum = parseInt(num1) + parseInt(num2); // "+" means "add"
+alert("Sum = " + sum); // "+" means combine into a string
 ```
 
 Some Python code 🐍

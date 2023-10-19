@@ -53,13 +53,8 @@ theme:
 # Plugins
 plugins:
   - glightbox
-  - blog:
-      enabled: true
-      blog_toc: true
-      pagination_per_page: 5
-      # post_url_format: "{categories}/{slug}"
-      # post_url_max_categories: 2
-      archive: false
+  - tags
+  - blog
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:

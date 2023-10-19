@@ -1,14 +1,19 @@
 ---
 title: KaTeX公式例子
 date: 2023-05-31
-tags: ['example', 'katex']
+tags:
+  - example
+  - katex
 draft: false
+authors: [hantang]
 summary: KaTeX例子, 参考自<https://katex.org/docs/supported.html>
 ---
 
-* $\TeX$
-* $\LaTeX$
-* $\KaTeX$
+- $\TeX$
+- $\LaTeX$
+- $\KaTeX$
+
+<!-- more -->
 
 ## Accents
 
@@ -24,8 +29,8 @@ $$
 
 $$
 \exists,
-\leftrightarrow, 
-\prod, 
+\leftrightarrow,
+\prod,
 \oiiint,
 \cdot,
 \sqrt{x},
@@ -42,6 +47,7 @@ $$
 $$
 
 ## Delimiters
+
 $$
 \lbrack  \rbrack, \lvert \rvert, \backslash
 $$
@@ -51,29 +57,31 @@ $$
 $$
 
 ## Environments
+
 $$
 \begin{vmatrix}
-   a & b \\
-   c & d
+    a & b \\
+    c & d
 \end{vmatrix}
 $$
 
 $$
 x = \begin{cases}
-   a &\text{if } b \\
-   c &\text{if } d
+    a &\text{if } b \\
+    c &\text{if } d
 \end{cases}
 $$
 
 $$
 \begin{CD}
-   A @>a>> B \\
+    A @>a>> B \\
 @VbVV @AAcA \\
-   C @= D
+    C @= D
 \end{CD}
 $$
 
 ## Styles
+
 $$
 \color{blue} F=ma \\
 \fcolorbox{red}{aqua}{$F=ma$} \\
@@ -82,6 +90,5 @@ $$
 $$
 
 $$
-\text{\sect}, \natural, \pounds, 
-\spades, \diamonds, \hearts, \clubs
+\text{\sect}, \natural, \pounds, \spades, \diamonds, \hearts, \clubs
 $$

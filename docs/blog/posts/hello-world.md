@@ -1,14 +1,18 @@
 ---
 title: Hello World
 date: 2023-02-14
-tags: ['example']
+tags:
+  - example
 draft: false
+authors: [hantang]
 summary: Hello world!
 ---
 
 ![](../../static/images/shot-by-cerqueira-XTKjhfE-Inc-unsplash.jpg "Photo from <https://unsplash.com/photos/XTKjhfE-Inc>")
 
-***
+<!-- more -->
+
+---
 
 ## 代码示例
 

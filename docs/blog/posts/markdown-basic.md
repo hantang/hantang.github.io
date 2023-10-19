@@ -1,13 +1,18 @@
 ---
-title: 'Markdown Basics'
+title:  Markdown Basics
 date: 2004-12-17
-tags: ['doc', 'markdown']
+tags:
+  - doc
+  - markdown
+categories:
+  - tech
 draft: false
-summary: Markdown基础语法
 authors: ['others'] # 'John Gruber'
+summary: Markdown基础语法
 ---
 
 > source: `https://daringfireball.net/projects/markdown/`
+<!-- more -->
 
 Getting the Gist of Markdown's Formatting Syntax
 ------------------------------------------------
