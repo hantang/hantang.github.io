@@ -28,6 +28,7 @@ theme:
     - navigation.instant
     - navigation.indexes
     - navigation.path
+    - navigation.footer
     - toc.follow
     - content.tabs.link
     - search.share
