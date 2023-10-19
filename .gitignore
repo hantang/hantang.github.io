@@ -57,10 +57,12 @@ pnpm-global
 # yarn.lock
 package-lock.json
 
+# mkdocs
+site/
+
 # local
 .trash/
 back/
 tmp/
 temp/
 todo/
-

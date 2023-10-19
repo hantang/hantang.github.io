@@ -1,5 +1,33 @@
 # hantang's blog
 
+## mkdocs
+
+Powered by [mkdocs](https://github.com/mkdocs/mkdocs), theme is [mkdocs-material](https://github.com/squidfunk/mkdocs-material)
+
+步骤：
+
+```bash
+# 安装
+pip install mkdocs mkdocs-material
+mkdocs new .
+
+# 启动
+mkdocs serve [-a :8080]
+mkdocs build
+
+# 部署
+mkdocs gh-deploy --force
+```
+
+配置`mkdocs.yml`
+
+```yaml
+theme:
+  name: material
+```
+
+## ~~next.js~~
+
 Powered By [tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog)
 
 ## 搭建

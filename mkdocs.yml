@@ -1,0 +1,10 @@
+site_name: My Docs
+site_url: https://hantang.github.io/
+repo_url: https://github.com/hantang/hantang.github.io
+# edit_uri: tree/main
+site_description: 
+# docs_dir: docs/
+copyright: Copyright &copy; 2023 Hantang
+
+theme:
+  name: material
