@@ -2,3 +2,4 @@ mkdocs
 mkdocs-material
 mkdocs-glightbox
 mkdocs-minify-plugin
+mdx_truly_sane_lists
