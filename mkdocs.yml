@@ -78,6 +78,7 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+  - mdx_truly_sane_lists
   # - pymdownx.arithmatex:
   #     generic: true
   - pymdownx.betterem:

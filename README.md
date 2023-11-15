@@ -78,3 +78,7 @@ export const Blog = defineDocumentType(() => ({
 // 修改
 filePathPattern: 'blog/**/*.{mdx,md}',
 ```
+
+- mkdocs, list缩进异常，使用`mdx_truly_sane_lists`
+
+参见：https://github.com/mkdocs/mkdocs/discussions/3063
