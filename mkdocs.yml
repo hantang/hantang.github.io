@@ -3,6 +3,7 @@ site_name: Hantang's Blog
 site_url: https://hantang.github.io/
 site_author: hantang
 site_description: "... write blogs and have fun ..."
+copyright: Copyright &copy; 2023 Hantang
 # docs_dir: docs/
 
 # Repository
@@ -10,64 +11,53 @@ repo_name: hantang/hantang.github.io
 repo_url: https://github.com/hantang/hantang.github.io
 # edit_uri: tree/main
 
-copyright: Copyright &copy; 2023 Hantang
-
 theme:
   name: material
   # language: "zh"
-  # palette:
-  #   primary: deep purple
-  #   accent: deep purple
+  icon:
+    logo: material/sprout
   font:
-    text: Helvetica Neue # Roboto
-    code: Roboto Mono
-  features:
-    - announce.dismiss
-    - navigation.tabs
-    - navigation.top
-    - navigation.instant
-    - navigation.indexes
-    - navigation.path
-    - navigation.footer
-    - toc.follow
-    - content.tabs.link
-    - search.share
-    - search.highlight
-    - search.suggest
-    - content.code.copy
-    - content.code.annotations
-
+    text: Helvetica Neue, Roboto
+    code: Fira Mono, Fira Code, Roboto Mono
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: slate
-      primary: black
-      accent: indigo
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Switch to system preference
+  features:
+    - announce.dismiss
+    - content.action.view
+    - content.code.annotations
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - toc.follow
+    - toc.integrate
 
-# Plugins
-plugins:
-  - glightbox
-  - tags
-  - blog
-  - search:
-      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
-      minify_html: true
-
-# Additional configuration
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/hantang
-
-# Extensions
 markdown_extensions:
   - abbr
   - admonition
@@ -75,73 +65,80 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
-  - tables
-  - toc:
-      permalink: true
-  - mdx_truly_sane_lists
-  # - pymdownx.arithmatex:
-  #     generic: true
-  - pymdownx.betterem:
-      smart_enable: all
   - pymdownx.caret
+  - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tilde
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink:
-      normalize_issue_symbols: true
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      auto_append:
-        - includes/mkdocs.md
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-      combine_header_slug: true
-      slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - tables
+  - mdx_truly_sane_lists
 
 extra_javascript:
-  # - javascripts/mathjax.js
-  # - https://polyfill.io/v3/polyfill.min.js?features=es6
-  # - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - static/javascripts/katex.js
+  - static/js/katex.js 
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
-  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js
+  - https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js
+
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hantang
+
+plugins:
+  - search
+  - tags:
+      tags_file: blog/tags.md
+  - blog:
+      # blog_dir: .
+      blog_toc: true
+      authors: false
+      pagination_keep_content: true
+      pagination_format: "~2~"
+      pagination_per_page: 5
+      # draft_on_serve: true
+      post_url_format: "{file}"
+      post_date_format: medium
+  - rss:
+      match_path: posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags 
+  - git-revision-date-localized
+  # - awesome-pages
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+
+exclude_docs: |
+  /drafts/
 
 # Page tree
 nav:
   - Home: index.md
-  - Blog:
-      - blog/index.md
-  - Essay:
-      - essay/index.md
-      - 林肯：葛底斯堡演讲: essay/gettysburg-address.md
-      - 聂鲁达：二十首情诗和一首绝望的歌: essay/poema-20.md
-      - 兰波：感觉: essay/sensation.md
-      - 策兰：死亡赋格曲: essay/todesfuge.md
-      - 金昌万：青春: essay/youth.md
-  - Project:
-      - project/index.md
-  - About:
-      - about/index.md
+  - Posts: blog/index.md
+  - Essay: blog/essay/index.md
+  - Projects: project/index.md
+  - About: about/index.md
