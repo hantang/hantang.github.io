@@ -27,7 +27,7 @@ theme:
         name: Switch to light mode
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
+      scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -92,7 +92,7 @@ markdown_extensions:
   - mdx_truly_sane_lists
 
 extra_javascript:
-  - static/js/katex.js 
+  - static/js/katex.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js
 
@@ -119,12 +119,12 @@ plugins:
       post_url_format: "{file}"
       post_date_format: medium
   - rss:
-      match_path: posts/.* 
+      match_path: blogs/posts/.*
       date_from_meta:
         as_creation: date
       categories:
         - categories
-        - tags 
+        - tags
   - git-revision-date-localized
   # - awesome-pages
   - minify:
@@ -138,7 +138,7 @@ exclude_docs: |
 # Page tree
 nav:
   - Home: index.md
-  - Posts: blog/index.md
+  - Project: project/index.md
   - Essay: blog/essay/index.md
-  - Projects: project/index.md
+  - Post: blog/index.md
   - About: about/index.md

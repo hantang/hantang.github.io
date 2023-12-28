@@ -1,11 +1,13 @@
 ---
 title: Code Sample
 date: 2016-03-08
+draft: false
+authors: [hantang]
+categories:
+  - tech
 tags:
   - example
   - markdown
-draft: false
-authors: [hantang]
 summary: Example of a markdown file with code blocks and syntax highlighting
 ---
 

@@ -1,13 +1,14 @@
 ---
 title:  Markdown Basics
 date: 2004-12-17
+draft: false
+authors: ['others']
+categories:
+  - tech
 tags:
   - doc
   - markdown
-categories:
-  - tech
-draft: false
-authors: ['others'] # 'John Gruber'
+  - reprint
 summary: Markdown基础语法
 ---
 

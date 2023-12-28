@@ -1,10 +1,12 @@
 ---
 title: Hello World
 date: 2023-02-14
-tags:
-  - example
 draft: false
 authors: [hantang]
+categories:
+  - tech
+tags:
+  - example
 summary: Hello world!
 ---
 

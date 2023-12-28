@@ -1,11 +1,13 @@
 ---
 title: KaTeX公式例子
 date: 2023-05-31
+draft: false
+authors: [hantang]
+categories:
+  - tech
 tags:
   - example
   - katex
-draft: false
-authors: [hantang]
 summary: KaTeX例子, 参考自<https://katex.org/docs/supported.html>
 ---
 

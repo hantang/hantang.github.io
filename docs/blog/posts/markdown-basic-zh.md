@@ -1,13 +1,14 @@
 ---
 title: Markdown基础（中文翻译）
 date: 2023-05-28
+draft: false
+authors: [hantang]
+categories:
+  - tech
 tags:
   - doc
   - markdown
-categories:
-  - tech
-draft: false
-authors: [hantang]
+  - translate
 summary: Markdown基础语法。翻译自`https://daringfireball.net/projects/markdown/`
 ---
 
