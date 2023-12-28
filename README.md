@@ -6,14 +6,15 @@ Powered by [mkdocs](https://github.com/mkdocs/mkdocs), theme is [mkdocs-material
 
 步骤：
 
-```bash
+```shell
 # 安装
 pip install mkdocs mkdocs-material
 mkdocs new .
 
 # 启动
-mkdocs serve [-a :8080]
-mkdocs build
+mkdocs serve 
+# mkdocs serve -a :8080
+# mkdocs build
 
 # 部署
 mkdocs gh-deploy --force
@@ -28,13 +29,11 @@ theme:
 
 ## ~~next.js~~
 
-Powered By [tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog)
+~~Powered By [tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog)~~
 
-## 搭建
+安装步骤：
 
-安装：
-
-```bash
+```shell
 npx degit 'timlrx/tailwind-nextjs-starter-blog'
 ```
 
@@ -51,7 +50,7 @@ npx degit 'timlrx/tailwind-nextjs-starter-blog'
 
 执行服务：
 
-```bash
+```shell
 # develop
 yarn
 yarn dev
@@ -63,7 +62,7 @@ npx serve out
 
 ## 问题
 
-- `data/`目录中只能识别`.mdx`文件，无法识别`.md`文件。
+- 【~~next.js~~】`data/`目录中只能识别`.mdx`文件，无法识别`.md`文件。
 
 修改`contentlayer.config.ts`：
 
@@ -79,6 +78,6 @@ export const Blog = defineDocumentType(() => ({
 filePathPattern: 'blog/**/*.{mdx,md}',
 ```
 
-- mkdocs, list缩进异常，使用`mdx_truly_sane_lists`
+- 【mkdocs】, markdown列表缩进异常，使用插件`mdx_truly_sane_lists`
 
-参见：https://github.com/mkdocs/mkdocs/discussions/3063
+参见：[mkdocs/mkdocs - [BUG] Invalid list indentation #3063](https://github.com/mkdocs/mkdocs/discussions/3063)
