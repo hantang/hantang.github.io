@@ -111,11 +111,11 @@ plugins:
   - blog:
       # blog_dir: .
       blog_toc: true
-      authors: false
+      authors: true
       pagination_keep_content: true
       pagination_format: "~2~"
       pagination_per_page: 5
-      # draft_on_serve: true
+      draft_on_serve: true
       post_url_format: "{file}"
       post_date_format: medium
   - rss:
