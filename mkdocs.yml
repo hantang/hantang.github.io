@@ -130,4 +130,4 @@ nav:
   - Posts:
     - blog/index.md
   - Tags: blog/tags.md
-  # - About: about/index.md
+  - About: about/index.md
