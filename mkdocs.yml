@@ -38,25 +38,13 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
   features:
-    - announce.dismiss
-    - content.action.view
-    - content.code.annotations
-    - content.code.copy
-    - content.tabs.link
-    - content.tooltips
-    - navigation.footer
-    - navigation.indexes
-    - navigation.instant
     - navigation.path
-    - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
     - navigation.top
-    - navigation.tracking
     - search.highlight
     - search.suggest
     - toc.follow
-    - toc.integrate
+    # - toc.integrate
 
 markdown_extensions:
   - abbr
@@ -65,19 +53,6 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tilde
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -97,11 +72,14 @@ markdown_extensions:
 
 extra_javascript:
   - static/js/katex.js
-  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
-  - https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+#   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+#   - https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js
 
 extra_css:
-  - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+#   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
 
 extra:
   social:
@@ -123,18 +101,17 @@ plugins:
       post_url_format: "{file}"
       post_date_format: medium
   - rss:
-      match_path: blogs/posts/.*
+      match_path: "blogs/posts/.*"
       date_from_meta:
         as_creation: date
       categories:
         - categories
         - tags
+      abstract_chars_count: 160
+      abstract_delimiter: <!-- more -->
   - git-revision-date-localized
-  # - awesome-pages
   - minify:
       minify_html: true
-      minify_js: true
-      minify_css: true
 
 exclude_docs: |
   /drafts/
@@ -143,6 +120,14 @@ exclude_docs: |
 nav:
   - Home: index.md
   - Project: project/index.md
-  - Essay: blog/essay/index.md
-  - Post: blog/index.md
-  - About: about/index.md
+  - Essay: 
+    - blog/essay/index.md
+    - blog/essay/gettysburg-address.md
+    - blog/essay/poema-20.md
+    - blog/essay/sensation.md
+    - blog/essay/todesfuge.md
+    - blog/essay/youth.md
+  - Posts:
+    - blog/index.md
+  - Tags: blog/tags.md
+  # - About: about/index.md

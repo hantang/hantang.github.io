@@ -9,10 +9,13 @@ tags:
   - doc
   - markdown
   - translate
+links:
+  - markdown-basic.md
 summary: Markdown基础语法。翻译自`https://daringfireball.net/projects/markdown/`
 ---
 
-> 翻译自`https://daringfireball.net/projects/markdown/`
+> 翻译自`https://daringfireball.net/projects/markdown/`  
+> 转载：[Markdown Basics](markdown-basic.md)
 
 ## 了解 Markdown 格式化语法的要点
 

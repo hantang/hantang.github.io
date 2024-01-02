@@ -1,5 +1,5 @@
 ---
-title: "청춘"
+title: "청춘 （金昌万：青春）"
 date: 1981-01-01
 tags: ['song']
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "The Gettysburg Address"
+title: "The Gettysburg Address （林肯：葛底斯堡演讲）"
 date: 1863-11-19
 tags: ['speech']
 draft: false

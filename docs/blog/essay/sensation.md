@@ -1,5 +1,5 @@
 ---
-title: "Sensation"
+title: "Sensation （阿蒂尔·兰波：感觉）"
 date: 1870-01-01
 tags: ['poem']
 draft: false

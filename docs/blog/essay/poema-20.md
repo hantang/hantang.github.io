@@ -1,5 +1,5 @@
 ---
-title: "Poema 20 de 20 poemas de amor y una canción desesperada"
+title: "Poema 20 de 20 poemas de amor y una canción desesperada （聂鲁达：二十首情诗和一首绝望的歌）"
 date: 1925-01-01
 tags: ['poem']
 draft: false
