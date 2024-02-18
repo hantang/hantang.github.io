@@ -46,6 +46,10 @@ theme:
     - search.suggest
     - toc.follow
     # - toc.integrate
+    - content.code.copy
+    # - content.action.edit
+    # - content.action.view
+    # - navigation.footer
 
 markdown_extensions:
   - abbr
@@ -54,16 +58,39 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - mdx_truly_sane_lists
+  - tables
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+      line_spans: __span
+      linenums_style: pymdownx-inline
+      linenums: true
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - toc:
       permalink: true
       toc_depth: 4
@@ -71,15 +98,13 @@ markdown_extensions:
         kwds:
           case: lower
           percent_encode: true
-  - mdx_truly_sane_lists
-  - tables
 
 extra_javascript:
-  - static/js/katex.js
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - assets/js/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
-#   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
-#   - https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js
+  # - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
+  # - https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.number.min.js
   - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.date.min.js
@@ -87,21 +112,28 @@ extra_javascript:
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
-#   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  # - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - assets/css/extra.css
 
 extra:
   social:
+    - icon: fontawesome/brands/pied-piper-alt
+    - icon: fontawesome/solid/rss
+      link: https://hantang.github.io/feed_rss_created.xml
     - icon: fontawesome/brands/github
       link: https://github.com/hantang
 
 plugins:
-  - search
-  - table-reader
   - git-revision-date-localized
-  - minify:
-      minify_html: true
-  - tags:
-      tags_file: blog/tags.md
+  - include-markdown
+  - mermaid2
+  - table-reader
+  - awesome-pages:
+      collapse_single_pages: true
+      strict: false
+      # order: asc
+      # sort_type: natural
+      # order_by: title
   - blog:
       # blog_dir: .
       blog_toc: true
@@ -112,14 +144,22 @@ plugins:
       draft_on_serve: true
       post_url_format: "{file}"
       post_date_format: medium
+      authors_profiles: true
+      archive_date_format: yyyy
+  - minify:
+      minify_html: true
+  - search:
+      separator: '[\s\u200b\-]'
+  - tags:
+      tags_file: blog/tags.md
   - rss:
-      match_path: "blogs/posts/.*"
+      match_path: blogs/posts/.*
       date_from_meta:
         as_creation: date
       categories:
         - categories
         - tags
-      abstract_chars_count: 160
+      abstract_chars_count: 144
       abstract_delimiter: <!-- more -->
 
 exclude_docs: |
@@ -127,15 +167,16 @@ exclude_docs: |
 
 nav:
   - Home: index.md
-  - Project: project/index.md
-  - Essay: 
-    - blog/essay/index.md
-    - blog/essay/gettysburg-address.md
-    - blog/essay/poema-20.md
-    - blog/essay/sensation.md
-    - blog/essay/todesfuge.md
-    - blog/essay/youth.md
-  - Posts:
-    - blog/index.md
-  - Tags: blog/tags.md
+  - Blog:
+      - Posts: blog/index.md
+      - Tags: blog/tags.md
+  - Essays:
+      - blog/essays/index.md
+      - ... | flat | blog/essays/*.md
+  - Archive:
+      - blog/archive/index.md
+      - ... | flat | blog/archive/*.md
+  - Projects:
+      - project/index.md
+      - ... | flat | project/*.md
   - About: about/index.md

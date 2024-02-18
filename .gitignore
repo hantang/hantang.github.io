@@ -1,14 +1,4 @@
-# macos
-.DS_Store
-
-# linux
-*~
-
-# ide
-.vscode/
-.idea/
-
-# nodejs/nextjs
+# web
 # dependencies
 /node_modules
 /.pnp
@@ -54,15 +44,32 @@ jspm_packages/
 dist/
 cache/
 pnpm-global
-# yarn.lock
+yarn.lock
 package-lock.json
+
+# python
+__pycache__/
+__pypackages__/
+*.py[cod]
 
 # mkdocs
 site/
 
-# local
+# macos
+.DS_Store
+
+# linux
+*~
+
+# ide
+.vscode/
+.idea/
+
+# more
 .trash/
 back/
+backup/
 tmp/
 temp/
 todo/
+drafts/

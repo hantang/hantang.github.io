@@ -6,4 +6,8 @@ mkdocs-table-reader-plugin
 mdx_truly_sane_lists
 mkdocs-rss-plugin
 mkdocs-git-revision-date-localized-plugin
-# mkdocs-awesome-pages-plugin
+mkdocs-mermaid2-plugin
+mkdocs-awesome-pages-plugin
+mkdocs-include-markdown-plugin
+jieba
+pymdown-extensions
