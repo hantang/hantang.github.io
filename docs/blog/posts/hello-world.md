@@ -9,7 +9,7 @@ categories:
 tags:
   - example
 description: Hello world!
-# comment:
+comments: true
 # slug:
 # icon:
 # readtime:
