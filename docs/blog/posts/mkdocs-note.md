@@ -11,11 +11,7 @@ tags:
   - blog
 description: mkdocs note
 comments: true
-hide:
-  #  - navigation
-  #  - toc
-  #  - footer
-  #  - feedback  
+# hide: [navigation, toc, footer, feedback]
 # slug:
 # icon:
 # readtime:
