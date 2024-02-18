@@ -14,7 +14,7 @@ repo_url: https://github.com/hantang/hantang.github.io
 # Theme
 theme:
   name: material
-  # custom_dir: overrides
+  custom_dir: overrides
   # language: "zh"
   icon:
     logo: material/sprout
