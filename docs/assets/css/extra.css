@@ -1,0 +1,26 @@
+.md-content {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.md-typeset h1 {
+  text-align: center;
+}
+
+/* 
+.md-grid {
+    max-width: 1440px;
+} 
+.md-sidebar {
+
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.right {
+    float: right;
+} 
+*/

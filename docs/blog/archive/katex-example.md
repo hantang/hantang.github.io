@@ -8,6 +8,7 @@ categories:
 tags:
   - example
   - katex
+  - archive
 summary: KaTeX例子, 参考自<https://katex.org/docs/supported.html>
 ---
 

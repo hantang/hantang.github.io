@@ -9,6 +9,7 @@ tags:
   - doc
   - markdown
   - translate
+  - archive
 links:
   - markdown-basic.md
 summary: Markdown基础语法。翻译自`https://daringfireball.net/projects/markdown/`
@@ -17,6 +18,8 @@ summary: Markdown基础语法。翻译自`https://daringfireball.net/projects/ma
 > 翻译自`https://daringfireball.net/projects/markdown/`  
 > 转载：[Markdown Basics](markdown-basic.md)
 
+<!-- more -->
+
 ## 了解 Markdown 格式化语法的要点
 
 本文简要说明了如何使用 Markdown。
@@ -24,8 +27,6 @@ summary: Markdown基础语法。翻译自`https://daringfireball.net/projects/ma
 但实际上 Markdown 通过找几个例子就很容易上手。
 本文中的例子都以一种“之前、之后”的方式写作，
 分别表示以 Markdown 语法的写作内容和对应生成的 HTML 输出内容。
-
-<!-- more -->
 
 直接试试写 Markdown 也很有用。
 Dingus 提供了一个网页程序，

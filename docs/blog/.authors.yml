@@ -1,9 +1,9 @@
 authors:
   hantang:
     name: Hantang
-    description: Writer
+    description: original
     avatar: https://github.com/hantang.png
   others:
-    name: others
+    name: Anonymous
     description: reprinted
     avatar: https://github.com/github.png

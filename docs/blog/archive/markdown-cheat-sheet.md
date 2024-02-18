@@ -8,6 +8,7 @@ categories:
 tags:
   - doc
   - markdown
+  - archive
 summary: Markdown语法速查表
 ---
 
@@ -15,6 +16,7 @@ summary: Markdown语法速查表
 >
 > - `https://markdown.com.cn/cheat-sheet.html`
 > - `https://keatonlao.gitee.io/a-study-note-for-markdown/syntax/`
+
 <!-- more -->
 
 ## 基本语法

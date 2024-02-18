@@ -1,78 +1,21 @@
 ---
-title: Hello World
-date: 2023-02-14
-draft: false
-authors: [hantang]
+draft: true
+date: 2024-02-18
 categories:
   - tech
 tags:
+  - demo
   - example
-summary: Hello world!
+slug: hello-world
+readtime: 1
 ---
 
-![](../../static/images/shot-by-cerqueira-XTKjhfE-Inc-unsplash.jpg "Photo from <https://unsplash.com/photos/XTKjhfE-Inc>")
+# Hello world!
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+massa, nec semper lorem quam in massa.
 
 <!-- more -->
 
----
-
-## 代码示例
-
-```bash
-echo "Hello World"
-```
-
-```c
-#include <stdio.h>
-
-int main() {
-printf("Hello World");
-return 0;
-}
-```
-
-```cpp
-#include <iostream>
-
-int main() {
-    std::cout << "Hello World";
-    return 0;
-}
-```
-
-```go
-println('Hello World");
-```
-
-```haskell
-module Main where
-
-main :: IO ()
-main = putStrLn "Hello World"
-```
-
-```java
-class HelloWorld {
-    public static void main (String[] args) {
-    System.out.println("Hello World");
-    }
-}
-```
-
-```javascript
-console.log("Hello World");
-```
-
-```lisp
-(print "Hello World")
-```
-
-```python
-print("Hello World")
-```
-
-```scala
-object HelloWorld extends App {
-    printIn("Hello World")
-}
-```
+...

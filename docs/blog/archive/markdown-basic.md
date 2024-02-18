@@ -9,10 +9,12 @@ tags:
   - doc
   - markdown
   - reprint
+  - archive
 summary: Markdown基础语法
 ---
 
 > source: `https://daringfireball.net/projects/markdown/`
+
 <!-- more -->
 
 Getting the Gist of Markdown's Formatting Syntax

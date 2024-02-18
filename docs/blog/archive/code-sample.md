@@ -8,11 +8,15 @@ categories:
 tags:
   - example
   - markdown
+  - archive
 summary: Example of a markdown file with code blocks and syntax highlighting
 ---
 
 A sample post with markdown.
+
 <!-- more -->
+
+# Code Sample
 
 ## Inline Highlighting
 
