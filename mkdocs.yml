@@ -1,9 +1,9 @@
-# site information
+# Site information
 site_name: Hantang's Blog
 site_url: https://hantang.github.io/
 site_author: hantang
 site_description: "... write blogs and have fun ..."
-copyright: Copyright &copy; 2023 Hantang
+copyright: Copyright &copy; 2023-2024 Hantang
 # docs_dir: docs/
 
 # Repository
@@ -11,6 +11,7 @@ repo_name: hantang/hantang.github.io
 repo_url: https://github.com/hantang/hantang.github.io
 # edit_uri: tree/main
 
+# Theme
 theme:
   name: material
   # language: "zh"
@@ -58,6 +59,9 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.arithmatex:
       generic: true
   - toc:
@@ -67,8 +71,8 @@ markdown_extensions:
         kwds:
           case: lower
           percent_encode: true
-  - tables
   - mdx_truly_sane_lists
+  - tables
 
 extra_javascript:
   - static/js/katex.js
@@ -76,6 +80,10 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 #   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
 #   - https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.number.min.js
+  - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.date.min.js
+  - assets/js/tablesort.js
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
@@ -88,6 +96,10 @@ extra:
 
 plugins:
   - search
+  - table-reader
+  - git-revision-date-localized
+  - minify:
+      minify_html: true
   - tags:
       tags_file: blog/tags.md
   - blog:
@@ -109,14 +121,10 @@ plugins:
         - tags
       abstract_chars_count: 160
       abstract_delimiter: <!-- more -->
-  - git-revision-date-localized
-  - minify:
-      minify_html: true
 
 exclude_docs: |
   /drafts/
 
-# Page tree
 nav:
   - Home: index.md
   - Project: project/index.md
