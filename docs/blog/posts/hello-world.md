@@ -1,21 +1,108 @@
 ---
-draft: true
-date: 2024-02-18
+title: Hello World
+date: 2023-02-14
+draft: false
+authors:
+  - hantang
 categories:
   - tech
 tags:
-  - demo
   - example
-slug: hello-world
-readtime: 1
+description: Hello world!
+# comment:
+# slug:
+# icon:
+# readtime:
+# links:
 ---
 
-# Hello world!
+> "Hello world!"
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-massa, nec semper lorem quam in massa.
+<figure markdown="span">
+
+  ![hello-world](../../images/shot-by-cerqueira-XTKjhfE-Inc-unsplash.jpg "unsplash photo"){ width="600" loading=lazy }
+
+</figure>
 
 <!-- more -->
 
-...
+# Hello World
+
+## Bash
+
+```bash
+echo "Hello World"
+```
+
+## C
+
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Hello World");
+    return 0;
+}
+```
+
+## C++
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello World";
+    return 0;
+}
+```
+
+## Golang
+
+```go
+println('Hello World");
+```
+
+## Haskell
+
+```haskell
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello World"
+```
+
+## Java
+
+```java
+class HelloWorld {
+    public static void main (String[] args) {
+        System.out.println("Hello World");
+    }
+}
+```
+
+## JavaScript
+
+```javascript
+console.log("Hello World");
+```
+
+## LISP
+
+```lisp
+(print "Hello World")
+```
+
+## Python
+
+```python
+print("Hello World")
+```
+
+## Scala
+
+```scala
+object HelloWorld extends App {
+    printIn("Hello World")
+}
+```
