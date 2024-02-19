@@ -5,6 +5,7 @@ hide:
   - footer
 search:
   exclude: true
+icon: material/earth
 ---
 
 # ༼ つ ◕‿◕ ༽つ ARCHIPELAGO :tada:

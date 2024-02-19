@@ -3,6 +3,7 @@ hide:
   - toc
 search:
   exclude: true
+icon: material/archive
 ---
 
 # :package: Archive

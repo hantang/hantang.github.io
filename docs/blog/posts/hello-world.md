@@ -1,5 +1,4 @@
 ---
-title: Hello World
 date: 2023-02-14
 draft: false
 authors:
@@ -10,9 +9,6 @@ tags:
   - example
 description: Hello world!
 comments: true
-# slug:
-# icon:
-# readtime:
 # links:
 ---
 

@@ -1,10 +1,9 @@
 ---
 search:
   exclude: true
+icon: material/tag
 ---
 
 # Tags
-
-Following is a list of relevant tags:
 
 [TAGS]

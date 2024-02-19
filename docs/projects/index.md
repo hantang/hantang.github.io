@@ -1,6 +1,7 @@
 ---
 search:
   exclude: true
+icon: material/view-list
 ---
 
 # :rocket: Projects

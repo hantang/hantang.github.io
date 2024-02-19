@@ -1,5 +1,4 @@
 ---
-title: MkDocs 札记
 date: 2024-02-18T22:55:17
 draft: true
 authors: 
@@ -11,10 +10,6 @@ tags:
   - blog
 description: mkdocs note
 comments: true
-# hide: [navigation, toc, footer, feedback]
-# slug:
-# icon:
-# readtime:
 # links:
 ---
 
