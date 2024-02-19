@@ -1,11 +1,9 @@
 ---
-hide:
-  - toc
 search:
   exclude: true
 icon: material/typewriter
 ---
 
-# Blog Posts
+# :memo: Blog Posts
 
 ---

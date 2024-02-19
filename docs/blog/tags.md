@@ -4,6 +4,6 @@ search:
 icon: material/tag
 ---
 
-# Tags
+# :label: Tags
 
 [TAGS]
