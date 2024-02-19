@@ -1,3 +1,15 @@
+@font-face
+{
+  font-family: 'Crimson Text';
+  src: url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap')
+}
+
+@font-face
+{
+  font-family: 'Open Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap')
+}
+
 .md-content {
   max-width: 70%;
   margin: 0 auto;

@@ -67,6 +67,7 @@ site/
 
 # more
 .trash/
+.cache/
 back/
 backup/
 tmp/

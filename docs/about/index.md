@@ -1,8 +1,8 @@
 ---
-title: about
 hide:
-  - navigation
   - toc
+search:
+  exclude: true
 ---
 
 # :art: About :tada:

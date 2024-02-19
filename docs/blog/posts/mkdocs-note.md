@@ -32,6 +32,39 @@ comments: true
 
 ## 示例
 
+
+!!! note "Considering a pull request"
+
+    Before deciding to spend effort on making changes and creating a pull
+    request, please discuss what you intend to do. If you are responding to
+
+
+``` mermaid
+sequenceDiagram
+  autonumber
+
+  participant mkdocs-material
+  participant PR
+  participant fork
+  participant local
+
+  mkdocs-material ->> fork: fork on GitHub
+  fork ->> local: clone to local
+  local ->> local: branch
+  loop prepare
+    loop push
+      loop edit
+        local ->> local: commit
+      end
+      local ->> fork: push
+    end
+    mkdocs-material ->> fork: merge in any changes
+    fork ->>+ PR: create draft PR
+    PR ->> PR: review your changes
+  end
+```
+
+
 ## 增强
 
 ### 评论系统
