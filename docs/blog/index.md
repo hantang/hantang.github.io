@@ -6,3 +6,5 @@ search:
 ---
 
 # Blog Posts
+
+---

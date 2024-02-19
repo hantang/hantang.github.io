@@ -162,12 +162,12 @@ plugins:
       pagination_format: "~2~"
       pagination_per_page: 10
       draft_on_serve: true
-      post_url_format: "{slug}"
+      post_url_format: "{file}" # "{slug}"
       post_date_format: medium
       archive_date_format: yyyy
-      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
+      # post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+      #   kwds:
+      #     case: lower
   - minify:
       minify_html: true
   - search:
@@ -202,7 +202,7 @@ nav:
       - Tags: blog/tags.md
   - More:
       - Projects:
-          - project/index.md
+          - projects/index.md
           - ... | flat | project/*.md
       - Essays:
           - essays/index.md

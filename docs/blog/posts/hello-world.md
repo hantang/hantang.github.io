@@ -19,9 +19,7 @@ comments: true
 > "Hello world!"
 
 <figure markdown="span">
-
-  ![hello-world](../../images/shot-by-cerqueira-XTKjhfE-Inc-unsplash.jpg "unsplash photo"){ width="600" loading=lazy }
-
+  ![hill-during-daytime-XTKjhfE-Inc](https://images.unsplash.com/photo-1563416544963-b508a73064cb){ width="600" loading=lazy }
 </figure>
 
 <!-- more -->

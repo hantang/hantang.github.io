@@ -1,4 +1,15 @@
-# Projects
+---
+search:
+  exclude: true
+---
+
+# :rocket: Projects
+
+<figure markdown="span">
+  ![selective-focus-photography-of-crayola-crayons-VAJEea9u6k8](https://images.unsplash.com/photo-1541018939203-36eeab6d5721){ width="350" loading=lazy}
+</figure>
+
+<!-- more -->
 
 ## latex templates (awesome collect)
 

@@ -1,23 +1,28 @@
 ---
-title: Markdown Cheat Sheet
 date: 2023-05-29
 draft: false
-authors: [hantang]
+authors:
+  - hantang
 categories:
-  - tech
-tags:
-  - doc
-  - markdown
   - archive
-summary: Markdown语法速查表
+tags:
+  - markdown
+  - cheatsheet
+comments: false
+links:
+  - markdown-basic.md
+  - markdown-basic-zh.md
+title: Markdown 语法速查
 ---
 
-> 参考自:
+> Markdown 语法速查，参考自:
 >
 > - `https://markdown.com.cn/cheat-sheet.html`
 > - `https://keatonlao.gitee.io/a-study-note-for-markdown/syntax/`
 
 <!-- more -->
+
+# Markdown 语法速查
 
 ## 基本语法
 
@@ -219,7 +224,7 @@ $$
 ### Front Matter
 
 ```markdown
-比如一组 3 个横线包括的 YAML 语法段落，比如
+比如一组 3 个横线包括的`YAML`语法段落，比如
 
 ---
 title: "文章标题"

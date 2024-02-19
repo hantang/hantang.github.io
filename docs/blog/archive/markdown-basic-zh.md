@@ -1,24 +1,24 @@
 ---
-title: Markdown基础（中文翻译）
 date: 2023-05-28
 draft: false
-authors: [hantang]
+authors:
+  - hantang
 categories:
-  - tech
-tags:
-  - doc
-  - markdown
-  - translate
   - archive
+tags:
+  - markdown
+  - translation
+comments: false
 links:
   - markdown-basic.md
-summary: Markdown基础语法。翻译自`https://daringfireball.net/projects/markdown/`
+title: Markdown 基础（中文翻译）
 ---
 
 > 翻译自`https://daringfireball.net/projects/markdown/`  
-> 转载：[Markdown Basics](markdown-basic.md)
 
 <!-- more -->
+
+# Markdown 基础（中文翻译）
 
 ## 了解 Markdown 格式化语法的要点
 

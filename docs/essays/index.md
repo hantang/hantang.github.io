@@ -5,8 +5,10 @@ search:
   exclude: true
 ---
 
-# Essays
+# :art: Essays
 
 <figure markdown="span">
-  ![photo-of-brown-wooden-bookshelf-xrbbXIXAWY0](https://images.unsplash.com/photo-1568667256549-094345857637){ width="500" loading=lazy}
+  ![photo-of-brown-wooden-bookshelf-xrbbXIXAWY0](https://images.unsplash.com/photo-1568667256549-094345857637){ width="600" loading=lazy}
 </figure>
+
+<!-- more -->
