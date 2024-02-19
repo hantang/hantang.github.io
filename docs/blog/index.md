@@ -1,5 +1,6 @@
 ---
-title: Posts
+hide:
+  - toc
 search:
   exclude: true
 ---
