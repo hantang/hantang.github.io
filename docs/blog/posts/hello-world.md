@@ -1,10 +1,11 @@
 ---
+title: Hello World
 date: 2023-02-14
 draft: false
 authors:
   - hantang
 categories:
-  - tech
+  - demo
 tags:
   - example
 description: Hello world!
@@ -18,9 +19,9 @@ comments: true
   ![hill-during-daytime-XTKjhfE-Inc](https://images.unsplash.com/photo-1563416544963-b508a73064cb){ width="600" loading=lazy }
 </figure>
 
-<!-- more -->
+---
 
-# Hello World
+<!-- more -->
 
 ## Bash
 

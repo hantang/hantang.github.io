@@ -1,7 +1,8 @@
 ---
+title: MkDocs 札记
 date: 2024-02-18T22:55:17
-draft: true
-authors: 
+draft: false
+authors:
   - hantang
 categories:
   - tech
@@ -10,14 +11,15 @@ tags:
   - blog
 description: mkdocs note
 comments: true
-# links:
+links:
+  - markdown-advanced.md
 ---
 
 > MkDocs 札记：记录建站过程中参考的资料和解决的问题。
 
-<!-- more -->
+---
 
-# MkDocs 札记
+<!-- more -->
 
 ## 文档和资源
 
@@ -25,46 +27,21 @@ comments: true
 - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/): a powerful documentation framework (theme) on top of MkDocs
 - [github.com, mkdocs/catalog](https://github.com/mkdocs/catalog): awesome MkDocs projects and plugins
 
-## 示例
+## 添加功能
 
+### 数学公式
 
-!!! note "Considering a pull request"
+两个方法：
 
-    Before deciding to spend effort on making changes and creating a pull
-    request, please discuss what you intend to do. If you are responding to
+- MathJax：功能更强
+- KaTeX：速度更快
 
+### Markdown 扩展功能
 
-``` mermaid
-sequenceDiagram
-  autonumber
-
-  participant mkdocs-material
-  participant PR
-  participant fork
-  participant local
-
-  mkdocs-material ->> fork: fork on GitHub
-  fork ->> local: clone to local
-  local ->> local: branch
-  loop prepare
-    loop push
-      loop edit
-        local ->> local: commit
-      end
-      local ->> fork: push
-    end
-    mkdocs-material ->> fork: merge in any changes
-    fork ->>+ PR: create draft PR
-    PR ->> PR: review your changes
-  end
-```
-
-
-## 增强
+增强的语法，参考 Python-Markdown、PyMdown Extensions。
 
 ### 评论系统
 
-`Giscus`参考资料：
-
-- [Material for MkDocs: Adding a comment system](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/)
-- [Giscus](https://giscus.app/)
+- `Giscus`参考资料：
+  - [Material for MkDocs: Adding a comment system](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/)
+  - [Giscus](https://giscus.app/)
