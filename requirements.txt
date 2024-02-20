@@ -1,13 +1,14 @@
 mkdocs
 mkdocs-material
-mkdocs-glightbox
-mkdocs-minify-plugin
-mkdocs-table-reader-plugin
-mkdocs-rss-plugin
-mkdocs-git-revision-date-localized-plugin
-mkdocs-mermaid2-plugin
 mkdocs-awesome-pages-plugin
+mkdocs-git-revision-date-localized-plugin
+mkdocs-glightbox
 mkdocs-include-markdown-plugin
+mkdocs-mermaid2-plugin
+mkdocs-minify-plugin
+mkdocs-roamlinks-plugin
+mkdocs-rss-plugin
+mkdocs-table-reader-plugin
 mdx_truly_sane_lists
 # mkdocs-macros-plugin
 # mkdocs-redirects

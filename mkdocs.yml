@@ -148,6 +148,7 @@ plugins:
   - include-markdown
   - mermaid2
   - table-reader
+  - roamlinks
   - awesome-pages:
       collapse_single_pages: true
       strict: false
