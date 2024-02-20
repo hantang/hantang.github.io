@@ -24,8 +24,9 @@ links:
 ## 文档和资源
 
 - [MkDocs](https://www.mkdocs.org): Project documentation with Markdown.
+  - [主题资源, MkDocs Themes](https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes)
+  - [插件资源, mkdocs/catalog](https://github.com/mkdocs/catalog)
 - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/): a powerful documentation framework (theme) on top of MkDocs
-- [github.com, mkdocs/catalog](https://github.com/mkdocs/catalog): awesome MkDocs projects and plugins
 
 ## 添加功能
 
