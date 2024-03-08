@@ -166,9 +166,9 @@ plugins:
       post_url_format: "{file}" # "{slug}"
       post_date_format: medium
       archive_date_format: yyyy
-      # post_slugify: !!python/object/apply:pymdownx.slugs.slugify
-      #   kwds:
-      #     case: lower
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - minify:
       minify_html: true
   - search:
@@ -204,15 +204,15 @@ nav:
   - More:
       - Projects:
           - projects/index.md
-          - ... | flat | project/*.md
+          - ... | flat | projects/*.md
       - Essays:
           - essays/index.md
           - ... | flat | essays/*.md
       - Archive:
           - blog/archive/index.md
           - ... | flat | blog/archive/*.md
-      - Misc:
-          - ...
+      # - Misc:
+      #     - ...
   - About:
       - about/index.md
       - ... | flat | about/*.md
