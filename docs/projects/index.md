@@ -20,7 +20,7 @@ icon: material/view-list
 
 <figure markdown="span">
   ![image](../images/projects/site-snapshot-latex-templates.png){ width="450" loading=lazy }
-  <figcaption><a href="https://github.com/hantang/latex-templates">latex templates</a></figcaption>
+  <figcaption><a href="https://hantang.github.io/latex-templates">latex templates</a></figcaption>
 </figure>
 
 ## cinephile (movie list)
@@ -46,5 +46,5 @@ icon: material/view-list
 
 <figure markdown="span">
   ![image](../images/projects/site-snapshot-weblog.png){ width="450" loading=lazy }
-  <figcaption><a href="https://github.com/hantang/weblog">Python Blog Builder</a></figcaption>
+  <figcaption><a href="https://hantang.github.io/weblog">Python Blog Builder</a></figcaption>
 </figure>

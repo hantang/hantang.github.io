@@ -18,21 +18,21 @@ icon: material/backup-restore
 
 <figure markdown="span">
   ![image](../images/projects/site-snapshot-gate-guokr.png){ width="450" loading=lazy }
-  <figcaption><a href="https://github.com/hantang/wayback-gate-guokr/">果壳任意门（镜像备份）</a></figcaption>
+  <figcaption><a href="https://hantang.github.io/wayback-gate-guokr/">果壳任意门（镜像备份）</a></figcaption>
 </figure>
 
 ## reference(cheatsheets.zip)
 
 <figure markdown="span">
   ![image](../images/projects/site-snapshot-reference.png){ width="450" loading=lazy }
-  <figcaption><a href="https://github.com/hantang/wayback-reference/">CheatSheets.zip（镜像备份）</a></figcaption>
+  <figcaption><a href="https://hantang.github.io/wayback-reference/">CheatSheets.zip（镜像备份）</a></figcaption>
 </figure>
 
 ## rsshub (documents only)
 
 <figure markdown="span">
   ![image](../images/projects/site-snapshot-rsshub-doc.png){ width="450" loading=lazy }
-  <figcaption><a href="https://github.com/hantang/wayback-rsshub-doc/">RssHub文档（镜像备份）</a></figcaption>
+  <figcaption><a href="https://hantang.github.io/wayback-rsshub-doc/">RssHub文档（镜像备份）</a></figcaption>
 </figure>
 
 ## Powered By `Mkdocs`
@@ -41,7 +41,7 @@ icon: material/backup-restore
 
 <figure markdown="span">
   ![image](../images/projects/site-snapshot-ufldl.png){ width="450" loading=lazy }
-  <figcaption><a href="https://github.com/hantang/wayback-ufldl/">Stanford | 机器学习/深度学习课程（吴恩达）</a></figcaption>
+  <figcaption><a href="https://hantang.github.io/wayback-ufldl/">Stanford | 机器学习/深度学习课程（吴恩达）</a></figcaption>
 </figure>
 
 <figure markdown="span">
@@ -57,12 +57,19 @@ wayback-missing-semester
 
 <figure markdown="span">
   ![image](../images/projects/site-snapshot-missing-semester.png){ width="450" loading=lazy }
-  <figcaption><a href="https://github.com/hantang/wayback-missing-semester/">MIT | 计算机教育中缺失的一课（2019-2020）</a></figcaption>
+  <figcaption><a href="https://hantang.github.io/wayback-missing-semester/">MIT | 计算机教育中缺失的一课（2019-2020）</a></figcaption>
 </figure>
 
 ## linux.cn (not official) archive
 
 <figure markdown="span">
   ![image](../images/projects/site-snapshot-linuxcn-archive.png){ width="450" loading=lazy }
-  <figcaption><a href="https://github.com/hantang/wayback-linuxcn-archive/">Linux中国（王兴宇、王兴江）文章归档（2011-2024）</a></figcaption>
+  <figcaption><a href="https://hantang.github.io/wayback-linuxcn-archive/">Linux中国（王兴宇、王兴江）文章归档（2011-2024）</a></figcaption>
+</figure>
+
+## pro git book
+
+<figure markdown="span">
+  ![image](../images/projects/site-snapshot-progit.png){ width="450" loading=lazy }
+  <figcaption><a href="https://hantang.github.io/wayback-progit/">《Pro Git》（中英双语版）, 原著作者Scott Chacon，Ben Straub</a></figcaption>
 </figure>
