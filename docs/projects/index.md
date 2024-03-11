@@ -20,7 +20,7 @@ icon: material/view-list
 
 <figure markdown="span">
   ![image](../images/projects/site-snapshot-latex-templates.png){ width="450" loading=lazy }
-  <figcaption><a href="https://hantang.github.io/latex-templates">latex templates</a></figcaption>
+  <figcaption>latex templates <a href="https://hantang.github.io/latex-templates">👉👉</a></figcaption>
 </figure>
 
 ## cinephile (movie list)
@@ -29,7 +29,7 @@ icon: material/view-list
 
 <figure markdown="span">
   ![image](../images/projects/site-snapshot-cinephile.png){ width="450" loading=lazy }
-  <figcaption><a href="https://hantang.github.io/cinephile">电影榜单</a></figcaption>
+  <figcaption>电影榜单 <a href="https://hantang.github.io/cinephile">👉👉</a></figcaption>
 </figure>
 
 ## linux from scratch (LFS) scripts
@@ -37,7 +37,7 @@ icon: material/view-list
 > Linux From Scratch scripts
 
 <figure markdown="span">
-  <figcaption><a href="https://github.com/hantang/linuxfromscratch-scripts">LFS脚本</a></figcaption>
+  <figcaption>LFS脚本 <a href="https://github.com/hantang/linuxfromscratch-scripts">👉👉</a></figcaption>
 </figure>
 
 ## weblog (blog site)
@@ -46,5 +46,15 @@ icon: material/view-list
 
 <figure markdown="span">
   ![image](../images/projects/site-snapshot-weblog.png){ width="450" loading=lazy }
-  <figcaption><a href="https://hantang.github.io/weblog">Python Blog Builder</a></figcaption>
+  <figcaption>Python Blog Builder <a href="https://hantang.github.io/weblog">👉👉</a></figcaption>
+</figure>
+
+## bookmark search
+
+> A bookmark file(html) parse and search tool online. **WIP**
+
+<figure markdown="span">
+
+  ![image](../images/projects/site-snapshot-bookmark-search.png){ width="450" loading=lazy }
+  <figcaption>Bookmark search Tool <a href="https://hantang.github.io/bookmark-search">👉👉</a></figcaption>
 </figure>
