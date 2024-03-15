@@ -198,6 +198,7 @@ plugins:
 
 nav:
   - Home: index.md
+  - Nav: nav/index.md  
   - Blog:
       - Posts: blog/index.md
       - Tags: blog/tags.md
