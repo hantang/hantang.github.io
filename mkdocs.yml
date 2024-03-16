@@ -129,12 +129,14 @@ extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.date.min.js
   - assets/js/tablesort.js
   - assets/js/shortcuts.js
+  - assets/javascripts/custom.129bd6ad.min.js
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   # - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
-  - assets/css/extra.css
+  # - assets/css/extra.css
   # - assets/css/custom.css
+  - assets/stylesheets/custom.00c04c01.min.css
 
 extra:
   social:
