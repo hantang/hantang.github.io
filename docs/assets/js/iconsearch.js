@@ -1,19 +1,22 @@
 // const searchInput = document.querySelector('.mdx-iconsearch__input');
-// const searchResult = document.querySelector('.mdx-iconsearch-result__meta');
+// const searchResultList = document.querySelector('.mdx-iconsearch-result__meta');
 // const searchResultMeta = document.querySelector('.mdx-iconsearch-result__list');
 
 const searchInput = document.getElementById('searchInput');
-const searchResult = document.getElementById('searchResult');
-const searchResultMeta = document.getElementById('searchResultCount');
+const searchResultList = document.getElementById('searchResultList');
+const searchResultMeta = document.getElementById('searchResultMeta');
 
 const datafile = '../assets/js/iconsearch_index.json';
-const displayStep = 10;
+const metaWords = "Type to start searching";
+const displayStep = 20;
 let searchData = null;
 let searchResults = [];
-let displayedResults = displayStep;
-const startWords = "Type to start searching";
+let displayedResultCount = 0;
 
-searchResultMeta.textContent = startWords;
+
+searchResultMeta.textContent = metaWords;
+searchResultList.style.overflowY = 'scroll';
+searchResultList.style.maxHeight = '300px';
 
 fetch(datafile)
   .then(response => response.json())
@@ -26,7 +29,7 @@ searchInput.addEventListener('input', function () {
   const query = this.value.trim().toLowerCase().replace(/\s+/g, '');
   searchResults = [];
 
-  // match results
+  // match results by letters
   for (const category in searchData) {
     const base = searchData[category].base;
     for (const key in searchData[category].data) {
@@ -34,7 +37,6 @@ searchInput.addEventListener('input', function () {
       let matchIndex = 0;
       let isMatch = true;
 
-      // 按单个字母顺序匹配
       for (const char of query) {
         const index = lowerCaseKey.indexOf(char, matchIndex);
         if (index === -1) {
@@ -50,13 +52,9 @@ searchInput.addEventListener('input', function () {
         const highlightedKey = key.replace(new RegExp(matchedText, 'i'), `<b>${matchedText}</b>`);
         const resultText = `
           <li class="mdx-iconsearch-result__item">
-          <span class="twemoji">
-          <img src="${base}/${value}">
-          </span>
+          <span class="twemoji"><img src="${base}/${value}"></span>
           <button class="md-clipboard--inline" title="Copy to clipboard" data-clipboard-text=":${key}:">
-          <code>
-          ${highlightedKey}
-          </code>
+            <code>${highlightedKey}</code>
           </button>
           </li>
           `;
@@ -65,6 +63,7 @@ searchInput.addEventListener('input', function () {
     }
   }
 
+  console.log("sort data", searchResults.length);
   // show results
   searchResults.sort((a, b) => {
     const textA = a.replace(/<\/?b>/g, '').toLowerCase();
@@ -72,6 +71,9 @@ searchInput.addEventListener('input', function () {
     return textA.localeCompare(textB);
   });
 
+  // clear then display
+  displayedResultCount = 0;
+  searchResultList.innerHTML = '';
   displaySearchResults();
 });
 
@@ -79,34 +81,37 @@ searchInput.addEventListener('input', function () {
 searchInput.addEventListener('keyup', function (event) {
   if (event.key === 'Backspace' && this.value.trim() === '') {
     searchResults = [];
+    displayedResultCount = 0;
     displaySearchResults();
-    searchResultMeta.textContent = startWords;
+    searchResultMeta.textContent = metaWords;
   }
 });
 
 function displaySearchResults() {
-  console.log(displayedResults)
+  console.log(displayedResultCount)
   const totalResults = searchResults.length;
   let html = '';
   let resultCount = '';
 
   if (totalResults > 0) {
     resultCount = totalResults > 1000 ? (totalResults / 1000).toFixed(1) + 'k' : totalResults;
-    html += `${searchResults.slice(0, displayedResults).join('')}`;
+    const results = searchResults.slice(displayedResultCount, displayedResultCount + displayStep);
+    html = searchResultList.innerHTML + `${results.join('')}`;
+    displayedResultCount += displayStep;
   } else {
     resultCount = 0;
   }
 
   searchResultMeta.textContent = `${resultCount} matches`;
-  searchResult.innerHTML = html;
+  searchResultList.innerHTML = html;
 }
 
-searchResult.addEventListener('scroll', function () {
-  const scrollTop = this.scrollTop;
-  const scrollHeight = this.scrollHeight;
-  const clientHeight = this.clientHeight;
-  if (scrollTop + clientHeight >= scrollHeight) {
-    displayedResults += displayStep;
+searchResultList.addEventListener('scroll', function () {
+  // const scrollTop = this.scrollTop;
+  // const scrollHeight = this.scrollHeight;
+  // const clientHeight = this.clientHeight;
+  // if (scrollTop + clientHeight >= scrollHeight) {
+  if( displayedResultCount <= searchResults.length) {
     displaySearchResults();
   }
 });
