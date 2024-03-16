@@ -2,7 +2,8 @@
 site_name: Hantang's Blog
 site_url: https://hantang.github.io/
 site_author: hantang
-site_description: "... write blogs and have fun ..."
+site_description: >-
+  ... write blogs and have fun ...
 copyright: Copyright &copy; 2023-2024 Hantang
 # docs_dir: docs/
 
@@ -16,29 +17,31 @@ theme:
   name: material
   custom_dir: overrides
   # language: "zh"
+  # favicon: assets/favicon.ico
   icon:
     logo: material/sprout
-    repo: fontawesome/brands/github-alt
+    repo: fontawesome/brands/square-github
   font:
     text: Open Sans, Helvetica Neue, Roboto, sans-serif, serif
     code: Fira Mono, Fira Code, Roboto Mono, monospace
   palette:
-    # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/brightness-auto
+        icon: material/link
         name: Switch to light mode
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: deep purple
+      accent: deep purple
       toggle:
-        icon: material/brightness-7
+        icon: material/toggle-switch
         name: Switch to dark mode
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: black
+      accent: indigo
       toggle:
-        icon: material/brightness-4
+        icon: material/toggle-switch-off
         name: Switch to system preference
   features:
     - navigation.footer
