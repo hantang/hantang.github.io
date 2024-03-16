@@ -205,7 +205,7 @@ plugins:
 nav:
   - Home: index.md
   - Search: search/index.md  
-  - Nav: nav/index.md  
+  - Navigation: nav/index.md  
   - Blog:
       - Posts: blog/index.md
       - Tags: blog/tags.md

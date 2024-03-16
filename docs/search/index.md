@@ -33,8 +33,15 @@ icon: material/tag-search-outline
 
 ## More
 
+### Emoji
+
 - [Emojipedia](https://emojipedia.org/)
 - [Getemoji](https://getemoji.com/)
 - [EmojiAll](https://www.emojiall.com/)
+- [Openmoji](https://openmoji.org/)
+
+### Icon
+
 - [Flaticon](https://www.flaticon.com/)
 - [Iconfinder](https://www.iconfinder.com/)
+- [Noun Project](https://thenounproject.com/)
