@@ -19,10 +19,6 @@ comments: true
 
 实现目标：Material for MkDocs官方文档中[Icons, Emojis搜索](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/?h=ico#search)
 
-相关issue/discussion: [A simple way to include the Icon search? #2822](https://github.com/squidfunk/mkdocs-material/discussions/2822)。
-
-主题的源代码: [iconsearch/query](https://github.com/squidfunk/mkdocs-material/tree/master/src/overrides/assets/javascripts/components/iconsearch/query).
-
 基本思想：从`iconsearch_index.json`读取图标名和对应图片位置信息，通过js搜索并展示响应结果。
 
 实现示例：[hantang.github.io/search :fontawesome-solid-link:](https://hantang.github.io/search/#search){ .md-button }
@@ -331,3 +327,8 @@ comments: true
       }
     });
     ```
+
+### 附录
+
+- 相关issue/discussion: [A simple way to include the Icon search? #2822](https://github.com/squidfunk/mkdocs-material/discussions/2822)。
+- 主题的源代码: [iconsearch/query](https://github.com/squidfunk/mkdocs-material/tree/master/src/overrides/assets/javascripts/components/iconsearch/query).
