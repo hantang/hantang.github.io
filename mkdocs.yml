@@ -17,7 +17,7 @@ theme:
   name: material
   custom_dir: overrides
   # language: "zh"
-  # favicon: assets/favicon.ico
+  favicon: assets/favicon.ico
   icon:
     logo: material/sprout
     repo: fontawesome/brands/square-github
@@ -119,23 +119,20 @@ markdown_extensions:
   - tables
 
 extra_javascript:
-  - assets/js/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
-  # - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js
-  # - https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js
-  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
-  - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.number.min.js
-  - https://unpkg.com/tablesort@5.3.0/dist/sorts/tablesort.date.min.js
-  - assets/js/tablesort.js
+  - https://code.jquery.com/jquery-3.7.1.min.js
+  - https://cdn.datatables.net/2.0.2/js/dataTables.min.js
+  - https://cdn.datatables.net/plug-ins/2.0.2/i18n/zh.json
+  - assets/js/katex.js
+  - assets/js/datatables.js
   - assets/js/shortcuts.js
   - assets/javascripts/custom.129bd6ad.min.js
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
-  # - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
+  - https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.min.css
   # - assets/css/extra.css
-  # - assets/css/custom.css
   - assets/stylesheets/custom.00c04c01.min.css
 
 extra:
