@@ -4,7 +4,7 @@ search:
 icon: material/tag-search-outline
 ---
 
-# Icons / Emojis
+# :grinning: Icons / Emojis
 
 ## Search
 

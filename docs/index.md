@@ -10,7 +10,7 @@ icon: material/earth
 
 # ༼ つ ◕‿◕ ༽つ ARCHIPELAGO :tada:
 
-<h2 style="font-family:'Crimson Text';font-style:italic;text-align:right">
+<h2 style="font-family:'Crimson Text';font-style:italic;padding-left: 60%">
 ... write blogs and have fun.
 </h2>
 

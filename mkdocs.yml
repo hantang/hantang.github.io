@@ -128,11 +128,12 @@ extra_javascript:
   - assets/js/datatables.js
   - assets/js/shortcuts.js
   - assets/javascripts/custom.129bd6ad.min.js
+  - assets/js/navsearch.js
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   - https://cdn.datatables.net/2.0.2/css/dataTables.dataTables.min.css
-  # - assets/css/extra.css
+  - assets/css/extra.css
   - assets/stylesheets/custom.00c04c01.min.css
 
 extra:
