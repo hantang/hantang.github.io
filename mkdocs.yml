@@ -207,18 +207,9 @@ nav:
   - Blog:
       - Posts: blog/index.md
       - Tags: blog/tags.md
-  - More:
-      - Projects:
-          - projects/index.md
-          - ... | flat | projects/*.md
-      - Essays:
-          - essays/index.md
-          - ... | flat | essays/*.md
-      - Archive:
-          - blog/archive/index.md
-          - ... | flat | blog/archive/*.md
-      # - Misc:
-      #     - ...
+  - Archive:
+      - blog/archive/index.md
+      - ... | flat | blog/archive/*.md
   - About:
       - about/index.md
       - ... | flat | about/*.md

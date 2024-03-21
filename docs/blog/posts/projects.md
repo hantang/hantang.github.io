@@ -1,10 +1,21 @@
 ---
+title: "🚀 Projects"
+date: 2024-02-21
+draft: false
+authors:
+  - hantang
+categories:
+  - tech
+tags:
+  - project
+description: projects in github
+comments: false
 search:
   exclude: true
 icon: material/view-list
 ---
 
-# :rocket: Projects
+项目聚合。
 
 <figure markdown="span">
   ![selective-focus-photography-of-crayola-crayons-VAJEea9u6k8](https://images.unsplash.com/photo-1541018939203-36eeab6d5721){ width="350" loading=lazy}

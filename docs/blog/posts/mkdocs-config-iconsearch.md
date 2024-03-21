@@ -225,7 +225,6 @@ comments: true
     let searchResults = [];
     let displayedResultCount = 0;
 
-
     searchResultMeta.textContent = metaWords;
     searchResultList.style.overflowY = 'scroll';
     searchResultList.style.maxHeight = '300px';
