@@ -1,7 +1,7 @@
 ---
 title: Git仓库重置历史提交者和邮箱
 date: 2024-03-17T22:45:26
-draft: true
+draft: false
 authors:
   - hantang
 categories:
