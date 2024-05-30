@@ -1,0 +1,11 @@
+# Site information
+site_name: Hantang's Blog
+site_url: https://hantang.github.io/
+copyright: Copyright &copy; 2024 | CC BY-4.0
+
+# Theme
+theme:
+  name: material
+
+nav:
+  - index.md
