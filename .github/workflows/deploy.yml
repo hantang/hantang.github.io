@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 1 * * 1"
+    - cron: "0 5 * * 3/6"
 
 jobs:
   deploy:
@@ -18,16 +18,13 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PYTHON_VERSION: 3.x
-      DOCS_PATH: blog
 
     steps:
-      - uses: actions/checkout@v4
       - name: Checkout blog
         uses: actions/checkout@v4
         with:
-          repository: hantang/blog
+          repository: hantang/void
           token: ${{ secrets.GH_TOKEN }}
-          path: ${{ env.DOCS_PATH }}
           fetch-depth: 1
           ref: ${{ github.ref }}
           submodules: 'true'
@@ -40,11 +37,10 @@ jobs:
       # - uses: actions/setup-node@v4
       #   with:
       #     node-version: latest
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
+      # - name: Install Python dependencies
+      #   run: pip install -r requirements.txt
       - name: Build mkdocs site
-        run: | 
-          bash ${{ env.DOCS_PATH }}/deploy.sh ${{ env.DOCS_PATH }}
+        run: bash ./deploy-all.sh
       - name: Setup pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
